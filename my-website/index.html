@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 100px 0;
+        }
+
+        .feature-card {
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact-section {
+            background-color: #f8f9fa;
+        }
+
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .details-section {
+            background-color: #ffffff;
+            padding: 60px 0;
+        }
+
+        .details-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light-sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ProductX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#details">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Introducing ProductX</h1>
+            <p class="lead my-4">Revolutionary technology that transforms your daily life</p>
+            <a href="#contact" class="btn btn-light btn-lg">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose ProductX?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Innovative Design</h5>
+                            <p class="card-text">Sleek, modern design that fits perfectly into your lifestyle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">High Performance</h5>
+                            <p class="card-text">Blazing fast processing for seamless user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">24/7 Support</h5>
+                            <p class="card-text">Round-the-clock customer support for your peace of mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Product Gallery</h2>
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/800x400?text=Product+Image+1" class="d-block w-100"
+                            alt="Product Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400?text=Product+Image+2" class="d-block w-100"
+                            alt="Product Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400?text=Product+Image+3" class="d-block w-100"
+                            alt="Product Image 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section id="details" class="details-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Product Details</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="details-card">
+                        <h4>Specifications</h4>
+                        <ul>
+                            <li><strong>Dimensions:</strong> 10" x 5" x 1"</li>
+                            <li><strong>Weight:</strong> 1.2 lbs</li>
+                            <li><strong>Battery Life:</strong> Up to 12 hours</li>
+                            <li><strong>Processor:</strong> Quad-Core 2.4 GHz</li>
+                            <li><strong>Storage:</strong> 256 GB SSD</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="details-card">
+                        <h4>Benefits</h4>
+                        <ul>
+                            <li>Portable and lightweight for on-the-go use</li>
+                            <li>Long-lasting battery for all-day productivity</li>
+                            <li>Fast processing for multitasking efficiency</li>
+                            <li>Ample storage for all your files and media</li>
+                            <li>Eco-friendly materials for sustainable use</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Order Now</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div id="orderForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Your phone number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" placeholder="Quantity" min="1"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" rows="4" placeholder="Your shipping address"
+                                required></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100" onclick="submitForm()">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 ProductX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Custom Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const quantity = document.getElementById('quantity').value;
+            const address = document.getElementById('address').value;
+
+            if (name && phone && quantity && address) {
+                alert('Thank you for your order! We will contact you soon to confirm.');
+                document.getElementById('name').value = '';
+                document.getElementById('phone').value = '';
+                document.getElementById('quantity').value = '';
+                document.getElementById('address').value = '';
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+    </script>
+</body>
+
+</html>
